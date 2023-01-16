@@ -67,7 +67,7 @@ a = { 1, 2 }
 a.add(2)
 a.add('2')
 a.remove(2)
-a.add({ 3, 4 })
+#a.add({ 3, 4 })
 a.add(frozenset({ 3, 4 }))
 b = { 1, 3 }
 b &= a
@@ -76,9 +76,11 @@ b |= a
 del a, b
 
 a = { 1: 2 }
-b = a[0]
+#b = a[0]
 b = a.get(0)
 a[1] = '2'
 b = a[1]
 del a[1]
+c = globals()
+d = c['a'] is a
 del a, b

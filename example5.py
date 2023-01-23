@@ -1,9 +1,9 @@
 a = 1
 b = 2
-if a < b: print('This is fine')
-else: print('This is not fine')
+if a < b: print('1: This is fine')
+else: print('1: This is not fine')
 
-print('This is fine' if a < b else 'This is not fine')
+print('2: This is fine' if a < b else '2: This is not fine')
 
 if a == b:
     print('Case 1')
@@ -11,6 +11,12 @@ elif a + 1 == b:
     print('Case 2')
 else:
     print('Case whatever')
+
+if None: print('3: This is fine')
+else: print('3: This is not fine')
+
+if 0: print('4: This is fine')
+else: print('4: This is not fine')
 
 
 def cycle(i):

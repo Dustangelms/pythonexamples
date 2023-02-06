@@ -14,3 +14,10 @@ def foo(a, b, c = 3, *d, e, **f):
 
 foo(1, 2, e = 5)
 foo(1, 2, 3.0, 4, 4.1, e = 5, main = 6)
+
+
+def bar(**f):
+    foo(1, 2, 3, e = 5, **f)
+
+
+bar(main = 6)

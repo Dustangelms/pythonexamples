@@ -18,7 +18,7 @@ def generator2(stop):
 
 
 print('==')
-for i in generator2():
+for i in generator2(None):
     print(i)
 print('==')
 for i in generator2(3):
